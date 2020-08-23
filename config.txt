@@ -1,0 +1,9 @@
+sudo apt-get install alsa-utils
+
+#forza l’uscita sul jack
+sudo amixer cset numid=3 1
+
+sudo speaker-test -t sine -f 440 -c 2 -s 1
+sudo speaker-test -t sine -f 440 -c 2 -s 2
+
+fro alsamixer configure the usb microphone
